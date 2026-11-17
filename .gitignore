@@ -1,0 +1,7 @@
+node_modules/
+shots/
+*.log
+*.tmp
+test/*.json
+test/*.log
+.DS_Store

@@ -1,0 +1,565 @@
+{
+  "version": 1,
+  "generator": "agent-computer-input/build-cursors",
+  "cell": 128,
+  "themes": {
+    "light": {
+      "dir": "light",
+      "source": "Cur/Vision Cursor Black",
+      "states": {
+        "pointer": {
+          "file": "pointer.png",
+          "source": "pointer.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "work": {
+          "file": "work.png",
+          "source": "work.ani",
+          "frames": 12,
+          "cols": 4,
+          "rows": 3,
+          "cell": 128,
+          "frameDelayMs": 200,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "animated": true
+        },
+        "busy": {
+          "file": "busy.png",
+          "source": "busy.ani",
+          "frames": 12,
+          "cols": 4,
+          "rows": 3,
+          "cell": 128,
+          "frameDelayMs": 200,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "animated": true
+        },
+        "unavailiable": {
+          "file": "unavailiable.png",
+          "source": "unavailiable.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "link": {
+          "file": "link.png",
+          "source": "link.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 28,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "text": {
+          "file": "text.png",
+          "source": "text.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "cross": {
+          "file": "cross.png",
+          "source": "cross.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "move": {
+          "file": "move.png",
+          "source": "move.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "vert": {
+          "file": "vert.png",
+          "source": "vert.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "horz": {
+          "file": "horz.png",
+          "source": "horz.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "help": {
+          "file": "help.png",
+          "source": "help.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "handwriting": {
+          "file": "handwriting.png",
+          "source": "handwriting.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "dgn1": {
+          "file": "dgn1.png",
+          "source": "dgn1.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "dgn2": {
+          "file": "dgn2.png",
+          "source": "dgn2.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "alternate": {
+          "file": "alternate.png",
+          "source": "alternate.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "person": {
+          "file": "person.png",
+          "source": "person.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 28,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "pin": {
+          "file": "pin.png",
+          "source": "pin.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 28,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        }
+      },
+      "preview": "preview-light.png"
+    },
+    "dark": {
+      "dir": "dark",
+      "source": "Cur/Vision Cursor White",
+      "states": {
+        "pointer": {
+          "file": "pointer.png",
+          "source": "pointer.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "work": {
+          "file": "work.png",
+          "source": "work.ani",
+          "frames": 12,
+          "cols": 4,
+          "rows": 3,
+          "cell": 128,
+          "frameDelayMs": 200,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "animated": true
+        },
+        "busy": {
+          "file": "busy.png",
+          "source": "busy.ani",
+          "frames": 12,
+          "cols": 4,
+          "rows": 3,
+          "cell": 128,
+          "frameDelayMs": 200,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 64,
+          "nativeHeight": 64,
+          "animated": true
+        },
+        "unavailiable": {
+          "file": "unavailiable.png",
+          "source": "unavailiable.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "link": {
+          "file": "link.png",
+          "source": "link.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 28,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "text": {
+          "file": "text.png",
+          "source": "text.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "cross": {
+          "file": "cross.png",
+          "source": "cross.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "move": {
+          "file": "move.png",
+          "source": "move.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "vert": {
+          "file": "vert.png",
+          "source": "vert.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "horz": {
+          "file": "horz.png",
+          "source": "horz.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "help": {
+          "file": "help.png",
+          "source": "help.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "handwriting": {
+          "file": "handwriting.png",
+          "source": "handwriting.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 8,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "dgn1": {
+          "file": "dgn1.png",
+          "source": "dgn1.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "dgn2": {
+          "file": "dgn2.png",
+          "source": "dgn2.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 64
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "alternate": {
+          "file": "alternate.png",
+          "source": "alternate.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 64,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "person": {
+          "file": "person.png",
+          "source": "person.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 28,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        },
+        "pin": {
+          "file": "pin.png",
+          "source": "pin.cur",
+          "frames": 1,
+          "cols": 1,
+          "rows": 1,
+          "cell": 128,
+          "frameDelayMs": 0,
+          "hotspot": {
+            "x": 28,
+            "y": 8
+          },
+          "nativeWidth": 128,
+          "nativeHeight": 128,
+          "animated": false
+        }
+      },
+      "preview": "preview-dark.png"
+    }
+  }
+}

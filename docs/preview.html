@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>agent-computer-input · cursor states</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    width: 1160px;
+    font-family: "Segoe UI", "Microsoft YaHei", system-ui, sans-serif;
+    background: #eef0f4;
+  }
+  .wrap { padding: 26px 26px 30px; }
+  h1 { margin: 0 0 4px; font-size: 20px; letter-spacing: .2px; }
+  .sub { margin: 0 0 18px; font-size: 12.5px; color: #5a6070; }
+  .panel { border-radius: 16px; padding: 18px 20px 20px; margin-bottom: 18px; }
+  .panel.light { background: #fbfbfd; border: 1px solid #dfe2ea; color: #14161c; }
+  .panel.dark  { background: #0f1015; border: 1px solid #23252e; color: #e9eaf0; }
+  .panel h2 { margin: 0 0 2px; font-size: 14px; font-weight: 700; }
+  .panel .hint { margin: 0 0 14px; font-size: 11.5px; opacity: .62; }
+  .grid { display: grid; grid-template-columns: repeat(9, 1fr); gap: 6px 4px; }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 4px 0; }
+  .item img { width: 52px; height: 52px; image-rendering: pixelated; display: block; }
+  .name { font-size: 10.5px; font-weight: 600; font-family: ui-monospace, Consolas, monospace; opacity: .92; }
+  .why { font-size: 10px; opacity: .55; text-align: center; line-height: 1.25; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>agent-computer-input · 17 cursor states × 2 themes</h1>
+  <p class="sub">同一个覆盖层按操作自动切换状态；主题跟随 Windows 深浅色自动换素材。</p>
+
+  <div class="panel light">
+    <h2>浅色主题 → 深色光标（Vision Cursor Black）</h2>
+    <p class="hint">assets/cursors/light/ · 深箭头 + 白描边，浅色背景下最清晰</p>
+    <div class="grid" id="grid-light"></div>
+  </div>
+
+  <div class="panel dark">
+    <h2>深色主题 → 浅色光标（Vision Cursor White）</h2>
+    <p class="hint">assets/cursors/dark/ · 浅箭头 + 深描边，深色背景下最清晰</p>
+    <div class="grid" id="grid-dark"></div>
+  </div>
+</div>
+<script>
+  const STATES = [
+    ['pointer', '默认 / 移动 / 点击'],
+    ['link', '可点元素'],
+    ['text', '输入文字'],
+    ['cross', '精确点击'],
+    ['move', '拖动'],
+    ['vert', '竖向滚动'],
+    ['horz', '横向滚动'],
+    ['dgn1', '斜向拖拽 1'],
+    ['dgn2', '斜向拖拽 2'],
+    ['busy', '执行中（动画）'],
+    ['work', '后台任务（动画）'],
+    ['help', '没点中'],
+    ['unavailiable', '暂停 / 接管'],
+    ['person', '等待主人'],
+    ['pin', '标记落点'],
+    ['handwriting', '手写'],
+    ['alternate', '兜底'],
+  ]
+  for (const theme of ['light', 'dark']) {
+    const grid = document.getElementById(`grid-${theme}`)
+    for (const [state, why] of STATES) {
+      const item = document.createElement('div')
+      item.className = 'item'
+      const img = document.createElement('img')
+      img.src = `../assets/cursors/${theme}/${state}.png`
+      img.alt = state
+      const name = document.createElement('div')
+      name.className = 'name'
+      name.textContent = state
+      const w = document.createElement('div')
+      w.className = 'why'
+      w.textContent = why
+      item.append(img, name, w)
+      grid.append(item)
+    }
+  }
+</script>
+</body>
+</html>

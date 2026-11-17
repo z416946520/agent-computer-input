@@ -1,0 +1,30 @@
+# NOTICE
+
+## Cursor artwork
+
+Files:
+
+- `Cur/`（原始素材包：`.cur` / `.ani` / `.png` / `.psd`）
+- `assets/cursors/light/*.png`、`assets/cursors/dark/*.png`（由 `scripts/build-cursors.mjs` 烘焙）
+
+作者：**Darques** —— 素材包 *Vision Cursor White* / *Vision Cursor Black*
+（`Cur/*/.Install.inf` 中的方案名分别为 `Vision Cursor White` / `Vision Cursor Black`）。
+
+These cursor images are **third-party free material**, not original work by the
+maintainer of this repository. Copyright remains with the original author
+(Darques). They are **not** relicensed under the MIT license that covers the
+source code; use and redistribution are governed by the original asset pack's
+license.
+
+The original asset pack's full license text is not bundled in this repository.
+Please consult the original pack for the exact terms. If you redistribute this
+project, keep this NOTICE (and the original asset pack's attribution) together
+with the artwork.
+
+改动说明：本项目只做了格式转换（`.cur` / `.ani` → 覆盖层可用的 PNG + manifest，
+统一 128px 画布并按整数倍最近邻放大），没有重绘素材。
+
+## Source code
+
+Source code (excluding the cursor artwork above) is MIT licensed; see `LICENSE`.
+It is derived from `dsh-independent-input` (MIT, © 2026 冬草里的鱼).

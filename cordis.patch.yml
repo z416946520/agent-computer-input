@@ -1,0 +1,25 @@
+# agent-computer-input · DSH 插件配置（只在 DSH 里用得到；MCP / HTTP / CLI 不读这个文件）
+#
+# enabled: 总开关。false = 任何动作都不执行。
+# cursorMode: companion（陪伴，默认，一直显示）| clean（动作后 cursorHoldMs 毫秒收起）
+# cursorSize: AI 光标边长（24–192，默认 96）
+# cursorTheme: auto（跟随 Windows 深浅色）| light（始终深色光标）| dark（始终浅色光标）
+# cursorOpacity: 0.2–1
+# animations: 是否播放 work / busy 的 .ani 动画
+# hotkey: 暂停热键；空串 = 不注册
+# allowPhysical: 是否允许 physical（真实鼠标 / 键盘）。默认 false。
+# idleShutdownMs: 空闲多久回收 sidecar 进程（0 = 不回收）
+- insert:
+    - id: agent-computer-input
+      name: agent-computer-input
+      config:
+        enabled: true
+        cursorMode: companion
+        cursorHoldMs: 2600
+        cursorSize: 96
+        cursorTheme: auto
+        cursorOpacity: 1
+        animations: true
+        hotkey: Ctrl+Alt+Q
+        allowPhysical: false
+        idleShutdownMs: 600000

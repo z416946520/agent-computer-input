@@ -1,0 +1,70 @@
+{
+  "name": "agent-computer-input",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "Agent 无关的独立鼠标键盘：所有动作只发到目标 hwnd（UIA / 窗口消息），不移动真实光标、不抢焦点；置顶 AI 光标覆盖层使用 Cur 素材包，按 Windows 深浅色自动切换。提供 MCP / HTTP / CLI / DSH 四种接入方式。",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./dsh": "./src/adapters/dsh/index.js",
+    "./dsh/client": "./src/adapters/dsh/client.js",
+    "./client": "./src/adapters/dsh/client.js",
+    "./core/*": "./src/core/*",
+    "./server/mcp": "./src/server/mcp.js",
+    "./server/http": "./src/server/http.js",
+    "./sidecar.ps1": "./src/sidecar/sidecar.ps1",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "aci": "bin/aci.js",
+    "aci-mcp": "bin/aci-mcp.js",
+    "aci-serve": "bin/aci-serve.js"
+  },
+  "files": [
+    "index.js",
+    "bin",
+    "src",
+    "assets",
+    "scripts",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build:cursors": "node scripts/build-cursors.mjs",
+    "mcp": "node bin/aci-mcp.js",
+    "serve": "node bin/aci-serve.js",
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "agent",
+    "computer-use",
+    "computer-input",
+    "mcp",
+    "model-context-protocol",
+    "windows",
+    "uia",
+    "automation",
+    "cursor-overlay",
+    "dsh",
+    "cordis",
+    "plugin"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots"
+      ]
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17"
+  }
+}

@@ -1,0 +1,8 @@
+# 默认统一 LF；.ps1 保留原始字节（PowerShell 5.1 靠 UTF-8 BOM 识别中文）
+* text=auto eol=lf
+*.ps1 -text
+*.cur -text
+*.ani -text
+*.png binary
+*.psd binary
+*.ico binary
