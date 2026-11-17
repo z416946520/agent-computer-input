@@ -235,7 +235,7 @@ test/                         node:test 单测 + WinForms 端到端
 （MIT，© 2026 冬草里的鱼）。
 
 - 原仓库路径：<https://github.com/dongcaodeliyu/dsh-independent-input>
-- `dsh-independent-input` 提供的：**“只向目标 hwnd 发 UIA / 窗口消息、不碰真实光标不抢焦点”**的设计取向、
+- 它提供了这套东西的底子：「只向目标 hwnd 发 UIA / 窗口消息、不碰真实光标不抢焦点」的设计取向、
   sidecar（PowerShell 5.1 STA + 内联 C# P/Invoke）结构、`Ctrl+Alt+Q` 暂停热键与安全边界、15 个光标状态的自动化思路。
 - 感谢作者把这么完整的一套方案开源，这个项目是在它肩膀上的重构，不是从零开始的发明。
 
