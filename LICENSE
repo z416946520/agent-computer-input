@@ -1,13 +1,7 @@
 MIT License
 
-This MIT license applies to the source code only. The cursor artwork under
-Cur/ and assets/cursors/ is third-party free material ("Vision Cursor White" /
-"Vision Cursor Black" by Darques), is not original to this project, and is NOT
-relicensed under MIT; its copyright belongs to the original author and its
-use/distribution is governed by the original asset pack's license. See NOTICE.
-
-Copyright (c) 2026 冬草里的鱼 (original dsh-independent-input)
-Copyright (c) 2026 agent-computer-input contributors (refactor)
+Copyright (c) 2026 冬草里的鱼 (original design & Windows implementation: dsh-independent-input)
+Copyright (c) 2026 z416946520 (agent-computer-input refactor)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -26,3 +20,10 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+Note: this MIT license covers the source code only. The cursor artwork under
+Cur/ and assets/cursors/ is third-party free material ("Vision Cursor White" /
+"Vision Cursor Black" by Darques), is not original to this project, and is NOT
+relicensed under MIT. See NOTICE.
